@@ -198,7 +198,7 @@ $(document).ready(function(){
 
   var dynamicData3 = JSONData3.map((elm, key) => {
     return (
-        `<div class="carousel-item col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 py-5" id="itemDiv${key}">
+        `<div class="carousel-item flex-fill col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 py-5" id="itemDiv${key}">
           <div class="testimonials_block">
             <div class="media media_height">
               <img class="mr-3" src="${elm.imagePath}" alt="Generic placeholder image">
