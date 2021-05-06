@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Aster CMI Hospital</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap 4 cdn's -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<!-- jQuery validation cdn -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+	<!-- External css files -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- font cdn -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<!-- Banner block -->
+	<div class="container-fluid p-0" id="banner">
+		<div class="banner_div">
+			<div class="container d-block m-auto">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<div class="banner_content mb-5">
+							<div class="logo mt-3 mb-5">
+								<img src="./images/Aster_logo_white.png">
+							</div>
+							<h3 class="mb-0">ADULT & PAEDIATRIC BONE MARROW TRANSPLANT PROGRAMME</h3>
+							<h5>Haematology | Oncology | Immunology</h5>
+							<button class="btn_class mt-3">Book An Appoinment</button>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<div class="banner_form_div w-75 d-block m-auto p-4">
+							<div class="form_head_div mb-4">
+								<h5>Enquire now</h5>
+							</div>
+							<form name='registration' action="#">
+								<div class="form_div">
+									<div class="mb-3">
+										<input class="form-control" type="text" name="name" placeholder="Name">
+									</div>
+									<div class="mb-3">
+										<input class="form-control" type="text" name="email" placeholder="Email ID">
+									</div>
+									<div class="mb-3">
+										<input class="form-control" type="tel" name="phone" placeholder="Phone number">
+									</div>
+									<div class="mb-3">
+										<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+											placeholder="Your message"></textarea>
+									</div>
+									<div class="mb-3 p-3 form-control h-auto">
+										<div class="form-check">
+											<input class="form-check-input mt-2" name="checkbox" type="checkbox"
+												value="" id="flexCheckDefault">
+											<label class="form-check-label" for="flexCheckDefault">
+												I’m not a robot
+											</label>
+										</div>
+									</div>
+								</div>
+								<button type="Submit" class="btn_class mt-3">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container-fluid p-5 mt-5">
+		<div class=" middle_sec container d-block m-auto">
+			<!-- BMT, HSCT block -->
+			<div class="bone_marrow_div">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<div class="bm_img">
+							<img src="./images/bm.png" class="w-100">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+						<div class="bm_content">
+							<div class="bm_rect_box p-3 my-3">
+								<p>Bone Marrow Transplant (BMT) better known as haematopoietic stem cell
+									transplant(HSCT) as bone marrow cells are transplanted</p>
+							</div>
+							<div class="bm_text01 py-4">
+								<p class="">Replacement of diseased or defective marrow with marrow from a healthy donor
+								</p>
+							</div>
+							<div class="bm_text01 py-4">
+								<p class="">Medicines and in certain situations radiotherapy as well is given to get rid
+									of diseased marrow and bone marrow cells from healthy donor is given to replace it.
+								</p>
+							</div>
+							<div class="bm_text03 py-4">
+								<p class="">IN autologous bone marrow transplant, high dose chemotherapy is given to
+									kill cancer cells and child own marrow cells are given back</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Doctors block -->
+			<div class="doctors_block my-5">
+				<h3>Doctors</h3>
+				<div class="container-fluid overflow-hidden">
+					<div class="row" id="docter_container">
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- Types of bone marrow block -->
+			<div class="types_of_bm my-5">
+				<h3>What are the types of Bone Marrow Transplant?</h3>
+				<div class="list_items">
+					<p>Autologous Bone Marrow Transplant - Marrow cells are collected from the patient’s own body and
+						transfused back after high dose chemotherapy.</p>
+					<p>Allogenic Bone Marrow Transplant (Matched Sibling Donor) – Replacement of diseased or defective
+						marrow with marrow from a genetically (HLA) matched sibling donor. </p>
+					<p>Allogenic Bone Marrow Transplant (Matched Unrelated Donor) – Replacement of diseased or defective
+						marrow with marrow from a genetically (HLA) matched donor obtained from bone marrow registries
+						in India and abroad. </p>
+					<p>Haplo-Identical Bone Marrow Transplant - Replacement of diseased or defective marrow with marrow
+						from the parent.</p>
+					<p>Umbilical cord Bone Marrow Transplant - Replacement of diseased or defective marrow with marrow
+						from a genetically (HLA) matched umbilical cord donor obtained from umbilical cord registries in
+						India and abroad.</p>
+				</div>
+			</div>
+
+			<!-- immune_deficiency block -->
+			<div class="immune_deficiency my-5">
+				<h3>The warning signs of Immune deficiency</h3>
+				<div class="container-fluid overflow-hidden">
+					<div class="row" id="immune_container">
+						
+					</div>
+				</div>
+			</div>
+
+			<!-- conditions block -->
+			<div class="conditions_for_bm">
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingOne">
+							<h5 class="mb-0 position-relative">
+								What are the conditions that requireBone Marrow Transplant?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" />
+						</div>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+							data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingTwo">
+							<h5 class="mb-0 position-relative">
+								Which are the hematological diseases that may benefit from bone marrow transplants?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" />
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingThree">
+							<h5 class="mb-0 position-relative">
+								Which are the Cancers that may benefit from bone marrow transplants?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" />
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingFour">
+							<h5 class="mb-0 position-relative">
+								Do bone marrow failure syndromes require BMT?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" />
+						</div>
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingFive">
+							<h5 class="mb-0 position-relative">
+								What are Primary Immune Deficiency diseases ?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" />
+						</div>
+						<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingSix">
+							<h5 class="mb-0 position-relative">
+								Which are the immune deficiencies that warrant BMT?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" />
+						</div>
+						<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header d-flex justify-content-between" id="headingSeven">
+							<h5 class="mb-0 position-relative">
+								What makes transplants at Aster CMI unique?
+							</h5>
+							<img class="arrow_img" src="./images/arrow.png" data-toggle="collapse"
+								data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" />
+						</div>
+						<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+							data-parent="#accordion">
+							<div class="card-body">
+								<p>BMT is the treatment of choice for blood disorders like Thalassemia, Sickle Cell
+									anemia, bone marrow failure syndromes like Aplastic anemia, serious immune
+									deficiencies and certain genetic metabolic disorders. </p>
+								<p>It is also used to treat high risk cancers like some cases of Acute Lymphoblastic
+									Leukemia, Acute Myeloid Leukemia, Multiple Myeloma and solid tumours like
+									Neuroblastoma, Ewings Sarcoma and certain relapsed cancers like Lymphomas</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Testimonials block -->
+	<div class="testimonials my-5 position-relative">
+		<h3>Testimonials</h3>
+		<div class="testimonials_para">
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+		</div>
+
+
+
+
+
+<div>
+	<div class="">
+		<a class="previous_class" href="#theCarousel" role="button" data-slide="prev">
+      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+      <img src="./images/left.png">
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="next_class" href="#theCarousel" role="button" data-slide="next">
+      <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+      <img src="./images/right.png">
+
+      <span class="sr-only">Next</span>
+    </a>
+  <div class="carousel slide multi-item-carousel py-1" id="theCarousel">
+
+    <div class="carousel-inner row mx-auto" id="carousal_container">
+    
+
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+
+
+
+		</div>
+	</div>
+
+	
+
+	<!-- Book an appointment -->
+	<div class="appointment my-5">
+		<button>Book An Appoinment</button>
+	</div>
+</div>
+
+	<!-- Footer -->
+	<div class="container-fluid p-0">
+		<div class="footer_div p-5">
+			<div class="container d-block m-auto position-relative">
+				<div class="social_icons pb-4">
+					<a href="javascript:void(0)"><img src="./images/fb.png"></a>
+					<a href="javascript:void(0)"><img src="./images/insta.png"></a>
+					<a href="javascript:void(0)"><img src="./images/youtube.png"></a>
+					<a href="javascript:void(0)"><img src="./images/twitter.png"></a>
+					<a href="javascript:void(0)"><img src="./images/linkedin.png"></a>
+				</div>
+				<div class="copyright_text mt-4">
+					<p class="text-center">Aster CMI. All Rights Reserved</p>
+				</div>
+				<div class="goTop">
+					<a href="#banner"><img src="./images/gotop.png"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- external scripts -->
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+</body>
+
+</html>

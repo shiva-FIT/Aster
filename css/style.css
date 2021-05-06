@@ -1,0 +1,602 @@
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Thin.eot');
+    src: local('Stag Sans Thin'), local('StagSans-Thin'),
+        url('../font/StagSans-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Thin.woff2') format('woff2'),
+        url('../font/StagSans-Thin.woff') format('woff'),
+        url('../font/StagSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Medium.eot');
+    src: local('Stag Sans Medium'), local('StagSans-Medium'),
+        url('../font/StagSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Medium.woff2') format('woff2'),
+        url('../font/StagSans-Medium.woff') format('woff'),
+        url('../font/StagSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-BoldItalic.eot');
+    src: local('Stag Sans Bold Italic'), local('StagSans-BoldItalic'),
+        url('../font/StagSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-BoldItalic.woff2') format('woff2'),
+        url('../font/StagSans-BoldItalic.woff') format('woff'),
+        url('../font/StagSans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-SemiBoldItalic.eot');
+    src: local('Stag Sans SemiBold Italic'), local('StagSans-SemiBoldItalic'),
+        url('../font/StagSans-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../font/StagSans-SemiBoldItalic.woff') format('woff'),
+        url('../font/StagSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-LightItalic.eot');
+    src: local('Stag Sans Light Italic'), local('StagSans-LightItalic'),
+        url('../font/StagSans-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-LightItalic.woff2') format('woff2'),
+        url('../font/StagSans-LightItalic.woff') format('woff'),
+        url('../font/StagSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Bold.eot');
+    src: local('Stag Sans Bold'), local('StagSans-Bold'),
+        url('../font/StagSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Bold.woff2') format('woff2'),
+        url('../font/StagSans-Bold.woff') format('woff'),
+        url('../font/StagSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-ThinItalic.eot');
+    src: local('Stag Sans Thin Italic'), local('StagSans-ThinItalic'),
+        url('../font/StagSans-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-ThinItalic.woff2') format('woff2'),
+        url('../font/StagSans-ThinItalic.woff') format('woff'),
+        url('../font/StagSans-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-BlackItalic.eot');
+    src: local('Stag Sans Black Italic'), local('StagSans-BlackItalic'),
+        url('../font/StagSans-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-BlackItalic.woff2') format('woff2'),
+        url('../font/StagSans-BlackItalic.woff') format('woff'),
+        url('../font/StagSans-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Black.eot');
+    src: local('Stag Sans Black'), local('StagSans-Black'),
+        url('../font/StagSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Black.woff2') format('woff2'),
+        url('../font/StagSans-Black.woff') format('woff'),
+        url('../font/StagSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Italic.eot');
+    src: local('Stag Sans Italic'), local('StagSans-Italic'),
+        url('../font/StagSans-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Italic.woff2') format('woff2'),
+        url('../font/StagSans-Italic.woff') format('woff'),
+        url('../font/StagSans-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Light.eot');
+    src: local('Stag Sans Light'), local('StagSans-Light'),
+        url('../font/StagSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Light.woff2') format('woff2'),
+        url('../font/StagSans-Light.woff') format('woff'),
+        url('../font/StagSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-MediumItalic.eot');
+    src: local('Stag Sans Medium Italic'), local('StagSans-MediumItalic'),
+        url('../font/StagSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-MediumItalic.woff2') format('woff2'),
+        url('../font/StagSans-MediumItalic.woff') format('woff'),
+        url('../font/StagSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-SemiBold.eot');
+    src: local('Stag Sans SemiBold'), local('StagSans-SemiBold'),
+        url('../font/StagSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-SemiBold.woff2') format('woff2'),
+        url('../font/StagSans-SemiBold.woff') format('woff'),
+        url('../font/StagSans-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stag Sans';
+    src: url('../font/StagSans-Regular.eot');
+    src: local('Stag Sans Regular'), local('StagSans-Regular'),
+        url('../font/StagSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/StagSans-Regular.woff2') format('woff2'),
+        url('../font/StagSans-Regular.woff') format('woff'),
+        url('../font/StagSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Stag Sans';
+}
+p {
+	margin: 0;
+  font-family: 'Stag Sans Light';
+}
+.banner_div {
+	background: url(../images/Banner_mage.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    padding: 3rem;
+}
+.logo img {
+	width: 40%;
+}
+.banner_content h3 {
+  color: #FFFFFF;
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 1.28px;
+  line-height: 40px;
+  text-align: left;
+  font-weight: 700;
+}
+.banner_content h5 {
+  color: #FFFFFF;
+  font-family: 'Stag Sans Light';
+  letter-spacing: 3.59px;
+  line-height: 34px;
+  text-align: left;
+  opacity: 0.5;
+}
+.btn_class, .btn_class:focus {
+	background-color: #DD5A6A;
+	border-radius: 3.2px;
+	padding: 10px 16px;
+	color: #FFFFFF;
+  	line-height: 17px;
+  	font-family: Arial;
+  	border: none;
+    outline: none;
+}
+.banner_form_div {
+	background-color: #fff;
+}
+.form_head_div h5 {
+  color: #213559;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 500;
+}
+form .error {
+  color: red;
+}
+/* BMT, HSCT block */
+.middle_sec h3 {
+  margin: 1rem 0;
+}
+.bm_img img {
+	height: fit-content;
+}
+.bm_rect_box {
+	background-image: linear-gradient(to right, #2EC4B8 , #6078EA);
+	border-radius: 4px;
+}
+.bm_rect_box p {
+  color: #FFFFFF;
+  line-height: 26px;
+  text-align: left;
+  font-weight: 500;
+}
+.bm_text01 {
+  color: #000000;
+  font-family: 'Stag Sans Light';
+  line-height: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ECECFF;
+}
+
+.bm_text03 {
+  color: #000000;
+  font-family: 'Stag Sans Light';
+  line-height: 20px;
+  text-align: left;
+}
+
+/*Doctors block css*/
+.doctor_profile_box {
+  background-color: #F9F9FF;
+  padding: 1.5rem;
+  text-align: center;
+}
+.doctor_profile_box h4 {
+  color: #22B78E;
+  
+  letter-spacing: 0.99px;
+  line-height: 44px;
+  font-weight: 500;
+}
+.doctor_profile_box h5 {
+  color: #1D5AA6;
+  
+  letter-spacing: 1.76px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.doc_details p {
+  color: #1D5AA6;
+  
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 3px;
+}
+
+.know_more button, .know_more button:focus {
+  background-image: linear-gradient(to right, #17EAD9 , #6078EA);
+  border-radius: 4px;
+  color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    font-weight: 500;
+}
+.border_line {
+  border-top: 2px solid #22B78E;
+  width: 10%;
+  display: block;
+  margin: 1rem auto;
+}
+.doc_details p {
+  color: #1D5AA6;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  line-height: 18px;
+  font-family: 'Stag Sans Light';
+}
+.doc_text {
+  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'Stag Sans Light';
+}
+#km_0, #km_1, #km_2, #km_3 {
+  height: 200px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doctors_block h3 {
+  color: #22B78E;
+  letter-spacing: 1.28px;
+  line-height: 44px;
+  font-weight: 500;
+}
+.gutters_class {
+  margin-bottom: 1px;
+}
+
+/*Types of bone marrow block*/
+.types_of_bm h3 {
+  color: #22B78E;
+  
+  letter-spacing: 1.28px;
+  line-height: 44px;
+  text-align: left;
+  font-weight: 700;
+}
+.list_items p {
+  color: #000000;
+  
+  font-size: 14px;
+  line-height: 39px;
+  text-align: left;
+  position: relative;
+  padding-left: 30px;
+}
+.list_items p::before {
+  content:url('../images/plus.png');
+  position:absolute;
+  left: 0px;
+  top: 3px;
+}
+
+/*immune deficiency css*/
+.immune_deficiency h3 {
+  color: #22B78E;
+  
+  letter-spacing: 1.28px;
+  line-height: 44px;
+  font-weight: 500;
+}
+.deficiency_icon_box {
+  background-color: #FFFFFF;
+  border: 1px solid #E5EAFF;
+  border-radius: 4px;
+  box-shadow: 3px 5px 29px 0 rgba(187, 165, 228, 0.1);
+  padding: 1.5rem 1rem;
+  height: 170px;
+}
+.icon_div {
+  height: 50px;
+}
+.text_div {
+  color: #000000;
+  font-family: 'Stag Sans Light';
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*conditions block*/
+.card-header img {
+	height: 12px;
+	width: 20px;
+	margin-top: 6px;
+    cursor: pointer;
+}
+.card h5 {
+	color: #1D5AA6;
+	font-weight: 500;
+	
+  	letter-spacing: 1.6px;
+  	line-height: 22px;
+  	text-align: left;
+}
+.card-body p {
+	position: relative;
+	color: #000000;
+  	
+  	font-size: 14px;
+  	line-height: 30px;
+  	text-align: left;
+  	padding-left: 30px;
+}
+.card-body p::before {
+  content:url('../images/double-tick.png');
+  position:absolute;
+  left: 0px;
+  top: 3px;
+}
+.card-header {
+	background-color: transparent !important;
+	padding: 26px 0px !important;
+}
+.card {
+	border: none !important;
+}
+/*appointment css*/
+.appointment button, .appointment button:focus {
+  color: #FFFFFF;
+  font-family: Arial;
+  line-height: 21px;
+  background-color: #004498;
+	padding: 14px 16px;
+  	line-height: 17px;
+  	border: none;
+    outline: none;
+font-size: 14px;
+display: block;
+margin: auto;
+}
+/*footer css*/
+.footer_div {
+	background-color: #272727;
+}
+.social_icons {
+	border-bottom: 1px solid #ffffff14;
+	text-align: center;
+}
+.social_icons img {
+	margin-right: 8px;
+}
+.copyright_text p {
+  color: #FFFFFF;
+  
+  font-size: 14px;
+  letter-spacing: 1.12px;
+  line-height: 17px;
+}
+.goTop {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 991px) {
+  .multi-item-carousel .carousel-inner .carousel-item {
+    margin-right: 3rem;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item,
+  .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item.active + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.33333333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .multi-item-carousel .carousel-inner .carousel-item-next,
+  .multi-item-carousel .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  .multi-item-carousel .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item,
+  .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .multi-item-carousel .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  .multi-item-carousel .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item,
+  .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .multi-item-carousel .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    display: block;
+    visibility: visible;
+  }
+
+  .carousel-inner {
+    width: 180%;
+  }
+  .testimonials_block {
+    width: 112%;
+  }
+}
+
+.testimonials_block {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 9px 8px 27px 1px rgba(0, 0, 0, 0.04);;
+  width: 100%;
+  height: 249px;
+  padding: 2rem;
+}
+
+.quote {
+  position: absolute;
+  right: 0;
+}
+.media_height {
+  position: relative;
+  height: 90px;
+}
+.previous_class {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+.next_class {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+.testimonials h3 {
+  color: #22B78E;
+  letter-spacing: 1.28px;
+  line-height: 44px;
+  font-weight: 500;
+}
+.media-body h5 {
+  font-weight: 900;
+}
+.media-body p {
+  font-size: 14px;
+}
+.testimonials_text {
+  color: #000000;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 21px;
+  font-family: 'Stag Sans LightItalic';
+}
+.testimonials_para p {
+  font-family: 'Stag Sans Light';
+}
+
+/*media Queries*/
+@media only screen and (max-width: 767px) {
+  .banner_div {
+    padding: 1.2rem;
+  }
+  .w-75 {
+    width: 100% !important;
+  }
+  .p-5 {
+    padding: 1.2rem !important;
+  }
+  h3 {
+    font-size: 1.4rem !important;
+  }
+  h4 {
+    font-size: 1.2rem !important;
+  }
+  h5 {
+    font-size: 1rem !important;
+  }
+}
